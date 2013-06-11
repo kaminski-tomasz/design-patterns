@@ -2,7 +2,7 @@
   realizations="true" associations="true" dependencies="true" nesting-relationships="true">  
   <class id="1" corner="BOTTOM_RIGHT" language="java" name="patterns.composite.parent.Component" 
     project="DesignPatterns" file="/DesignPatterns/src/patterns/composite/parent/Component.java" binary="false">    
-    <position height="-1" width="-1" x="214" y="127"/>    
+    <position height="-1" width="-1" x="312" y="155"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
       <operations public="true" package="true" protected="true" private="true"/>    
@@ -10,7 +10,7 @@
   </class>  
   <class id="2" corner="BOTTOM_RIGHT" language="java" name="patterns.composite.parent.LeafA" project="DesignPatterns" 
     file="/DesignPatterns/src/patterns/composite/parent/LeafA.java" binary="false">    
-    <position height="-1" width="-1" x="110" y="323"/>    
+    <position height="-1" width="-1" x="208" y="351"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
       <operations public="true" package="true" protected="true" private="true"/>    
@@ -18,7 +18,7 @@
   </class>  
   <class id="3" corner="BOTTOM_RIGHT" language="java" name="patterns.composite.parent.LeafB" project="DesignPatterns" 
     file="/DesignPatterns/src/patterns/composite/parent/LeafB.java" binary="false">    
-    <position height="-1" width="-1" x="276" y="323"/>    
+    <position height="-1" width="-1" x="374" y="351"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
       <operations public="true" package="true" protected="true" private="true"/>    
@@ -26,7 +26,7 @@
   </class>  
   <interface id="4" corner="BOTTOM_RIGHT" language="java" name="patterns.composite.parent.IComponent" 
     project="DesignPatterns" file="/DesignPatterns/src/patterns/composite/parent/IComponent.java" binary="false">    
-    <position height="-1" width="-1" x="494" y="126"/>    
+    <position height="-1" width="-1" x="592" y="154"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
       <operations public="true" package="true" protected="true" private="true"/>    
@@ -34,7 +34,7 @@
   </interface>  
   <class id="5" corner="BOTTOM_RIGHT" language="java" name="patterns.composite.parent.Composite" 
     project="DesignPatterns" file="/DesignPatterns/src/patterns/composite/parent/Composite.java" binary="false">    
-    <position height="-1" width="-1" x="481" y="349"/>    
+    <position height="-1" width="-1" x="579" y="377"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
       <operations public="true" package="true" protected="true" private="true"/>    
@@ -44,23 +44,23 @@
     <end type="SOURCE" refId="5"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
-  <realization id="7">    
-    <bendpoint x="349" y="181"/>    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="4"/>  
-  </realization>  
-  <generalization id="8">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <association id="9">    
+  <association id="7">    
     <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="10" name="componentList"/>      
-      <multiplicity id="11" minimum="0" maximum="2147483647"/>    
+      <attribute id="8" name="componentList"/>      
+      <multiplicity id="9" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <realization id="10">    
+    <bendpoint x="447" y="209"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <generalization id="11">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
   <association id="12">    
     <end type="SOURCE" refId="1" navigable="false">      
       <attribute id="13" name="parent"/>      
@@ -70,7 +70,7 @@
     <display labels="true" multiplicity="true"/>  
   </association>  
   <generalization id="15">    
-    <end type="SOURCE" refId="3"/>    
+    <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
