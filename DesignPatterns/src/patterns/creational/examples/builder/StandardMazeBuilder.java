@@ -50,6 +50,22 @@ public class StandardMazeBuilder extends MazeBuilder
 
 	private Direction commonWall( Room r1, Room r2 )
 	{
+		if( r2.getRoomNumber() == r1.getRoomNumber() + 1 )
+		{
+			return Direction.EAST;
+		}
+		if( r1.getRoomNumber() == r2.getRoomNumber() + 1 )
+		{
+			return Direction.WEST;
+		}
+		if( r2.getRoomNumber() > r1.getRoomNumber() )
+		{
+			return Direction.SOUTH;
+		}
+		if( r1.getRoomNumber() > r2.getRoomNumber() )
+		{
+			return Direction.NORTH;
+		}
 		return null;
 	}
 
