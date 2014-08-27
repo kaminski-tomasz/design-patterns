@@ -25,7 +25,7 @@ public class StandardMazeBuilder extends MazeBuilder
 	@Override
 	public void buildRoom( int n )
 	{
-		if( currentMaze != null && currentMaze.roomNo( n ) != null )
+		if( currentMaze != null && currentMaze.roomNo( n ) == null )
 		{
 			Room room = new Room( n );
 			currentMaze.addRoom( room );
@@ -50,21 +50,24 @@ public class StandardMazeBuilder extends MazeBuilder
 
 	private Direction commonWall( Room r1, Room r2 )
 	{
-		if( r2.getRoomNumber() == r1.getRoomNumber() + 1 )
+		if( r1 != null && r2 != null )
 		{
-			return Direction.EAST;
-		}
-		if( r1.getRoomNumber() == r2.getRoomNumber() + 1 )
-		{
-			return Direction.WEST;
-		}
-		if( r2.getRoomNumber() > r1.getRoomNumber() )
-		{
-			return Direction.SOUTH;
-		}
-		if( r1.getRoomNumber() > r2.getRoomNumber() )
-		{
-			return Direction.NORTH;
+			if( r2.getRoomNumber() == r1.getRoomNumber() + 1 )
+			{
+				return Direction.EAST;
+			}
+			if( r1.getRoomNumber() == r2.getRoomNumber() + 1 )
+			{
+				return Direction.WEST;
+			}
+			if( r2.getRoomNumber() > r1.getRoomNumber() )
+			{
+				return Direction.SOUTH;
+			}
+			if( r1.getRoomNumber() > r2.getRoomNumber() )
+			{
+				return Direction.NORTH;
+			}
 		}
 		return null;
 	}

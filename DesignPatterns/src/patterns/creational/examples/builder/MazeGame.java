@@ -26,4 +26,19 @@ public class MazeGame
 
 		return builder.getMaze();
 	}
+
+	public static void main( String[] args )
+	{
+		MazeGame mazeGame = new MazeGame();
+		StandardMazeBuilder mazeBuilder = new StandardMazeBuilder();
+
+		mazeGame.createMaze( mazeBuilder );
+		Maze maze = mazeBuilder.getMaze();
+		maze.enterTheRoom( 1 );
+
+		CountingMazeBuilder countingBuilder = new CountingMazeBuilder();
+		mazeGame.createMaze( countingBuilder );
+		System.out.println( "Liczba pomieszczen w labiryncie wynosi " + countingBuilder.getRooms()
+				+ ", a liczba drzwi: " + countingBuilder.getDoors() );
+	}
 }
