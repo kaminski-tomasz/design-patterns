@@ -37,4 +37,14 @@ public class Door implements MapSite
 	{
 		System.out.println( "The door is encountered" );
 	}
+
+	public boolean isOpen()
+	{
+		return open;
+	}
+
+	public void setOpen( boolean open )
+	{
+		this.open = open;
+	}
 }
