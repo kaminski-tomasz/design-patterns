@@ -1,29 +1,33 @@
 package patterns.creational.abstractfactory;
 
-public class Client {
-
-	public static void testFactory(IAbstractFactory factory) {
-		IProductA productA;
-		IProductB productB;
+/**
+ * Testing the factory pattern.
+ * 
+ * @author Tomek
+ *
+ */
+public class Client
+{
+	public static void testFactory( AbstractFactory factory )
+	{
+		AbstractProductA productA;
+		AbstractProductB productB;
 		productA = factory.createProductA();
-		System.out.println(productA.getADescription());
+		System.out.println( productA.getADescription() );
 		productB = factory.createProductB();
-		System.out.println(productB.getBDescription());
+		System.out.println( productB.getBDescription() );
 	}
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		IAbstractFactory factory;
-		
+
+	public static void main( String[] args )
+	{
+		AbstractFactory factory;
+
 		/* Product family 1 */
 		factory = new ConcreteFactory1();
-		testFactory(factory);
-		
+		testFactory( factory );
+
 		/* Product family 2 */
 		factory = new ConcreteFactory2();
-		testFactory(factory);
+		testFactory( factory );
 	}
-
 }

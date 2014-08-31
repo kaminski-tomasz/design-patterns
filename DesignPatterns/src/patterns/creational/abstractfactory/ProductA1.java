@@ -1,16 +1,16 @@
 package patterns.creational.abstractfactory;
 
 /**
- * Concrete product A2
+ * Concrete product A1
  * 
  * @author Tomek
  *
  */
-public class ProductA2 implements AbstractProductA
+public class ProductA1 implements AbstractProductA
 {
 	@Override
 	public String getADescription()
 	{
-		return "ProductA2";
+		return "ProductA1";
 	}
 }

@@ -1,15 +1,22 @@
 package patterns.creational.abstractfactory;
 
-public class ConcreteFactory1 implements IAbstractFactory {
-
+/**
+ * Example of concrete factory
+ * 
+ * @author Tomek
+ *
+ */
+public class ConcreteFactory1 implements AbstractFactory
+{
 	@Override
-	public IProductA createProductA() {
-		return new IProductA1();
+	public AbstractProductA createProductA()
+	{
+		return new ProductA1();
 	}
 
 	@Override
-	public IProductB createProductB() {
+	public AbstractProductB createProductB()
+	{
 		return new ProductB1();
 	}
-
 }

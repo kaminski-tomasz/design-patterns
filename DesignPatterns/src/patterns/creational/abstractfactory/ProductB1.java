@@ -1,10 +1,16 @@
 package patterns.creational.abstractfactory;
 
-public class ProductB1 implements IProductB {
-
+/**
+ * Concrete product B1
+ * 
+ * @author Tomek
+ *
+ */
+public class ProductB1 implements AbstractProductB
+{
 	@Override
-	public String getBDescription() {
+	public String getBDescription()
+	{
 		return "ProductB1";
 	}
-
 }
