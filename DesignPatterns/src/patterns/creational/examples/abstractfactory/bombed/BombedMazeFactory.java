@@ -15,6 +15,6 @@ public class BombedMazeFactory extends MazeFactory
 	@Override
 	public Room makeRoom( int num )
 	{
-		return new RoomWithBomb( num );
+		return new RoomWithABomb( num );
 	}
 }

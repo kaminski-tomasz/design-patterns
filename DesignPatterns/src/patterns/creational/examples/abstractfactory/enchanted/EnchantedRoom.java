@@ -8,4 +8,11 @@ public class EnchantedRoom extends Room
 	{
 		super( roomNo );
 	}
+	
+	@Override
+	public void enter()
+	{
+		System.out.print("EnchantedRoom: ");
+		super.enter();
+	}
 }

@@ -4,8 +4,6 @@ import patterns.creational.examples.Direction;
 import patterns.creational.examples.Door;
 import patterns.creational.examples.Maze;
 import patterns.creational.examples.Room;
-import patterns.creational.examples.abstractfactory.bombed.BombedMazeFactory;
-import patterns.creational.examples.abstractfactory.enchanted.EnchantedMazeFactory;
 
 public class MazeGame
 {
@@ -32,28 +30,4 @@ public class MazeGame
 		return maze;
 	}
 
-	public static void main( String[] args )
-	{
-		MazeGame mazeGame = new MazeGame();
-
-		/*
-		 * Using default factory
-		 */
-		MazeFactory factory = new MazeFactory();
-		Maze maze = mazeGame.createMaze( factory );
-
-		/*
-		 * Using enchanted factory
-		 */
-		factory = new EnchantedMazeFactory();
-		maze = mazeGame.createMaze( factory );
-
-		/*
-		 * Using bombed maze factory
-		 */
-		factory = new BombedMazeFactory();
-		maze = mazeGame.createMaze( factory );
-
-		maze.enterTheRoom( 0 );
-	}
 }
