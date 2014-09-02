@@ -8,7 +8,6 @@ import patterns.creational.examples.Wall;
 
 public class MazeGame
 {
-	
 	/*
 	 * Factory methods
 	 */
@@ -17,9 +16,9 @@ public class MazeGame
 		return new Maze();
 	}
 
-	public Room makeRoom( int n )
+	public Room makeRoom( int roomNo )
 	{
-		return new Room( n );
+		return new Room( roomNo );
 	}
 
 	public Wall makeWall()
@@ -56,14 +55,5 @@ public class MazeGame
 		r2.setSide( Direction.WEST, door );
 		
 		return maze;
-	}
-	
-	public static void main( String[] args )
-	{
-		MazeGame mazeGame = new MazeGame( );
-		
-		Maze maze = mazeGame.createMaze( );
-		
-		maze.enterTheRoom( 0 );
 	}
 }
