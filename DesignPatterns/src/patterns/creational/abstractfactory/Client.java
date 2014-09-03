@@ -1,7 +1,7 @@
 package patterns.creational.abstractfactory;
 
 /**
- * Testing the factory pattern.
+ * Testing the Abstract Factory pattern.
  * 
  * @author Tomek
  *

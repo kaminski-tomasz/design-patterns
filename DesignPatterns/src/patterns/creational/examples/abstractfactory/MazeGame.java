@@ -29,5 +29,4 @@ public class MazeGame
 
 		return maze;
 	}
-
 }
