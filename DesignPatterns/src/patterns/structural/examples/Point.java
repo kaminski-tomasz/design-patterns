@@ -129,15 +129,4 @@ public class Point
 		}
 		return super.equals( obj );
 	}
-
-	public static void main( String[] args )
-	{
-		Point A = new Point( 1, 2 );
-		Point B = new Point( 3, 4 );
-
-		System.out.println( A.add( B ) );
-		System.out.println( A.sub( B ) );
-		System.out.println( A.mul( B ) );
-		System.out.println( A.div( B ) );
-	}
 }

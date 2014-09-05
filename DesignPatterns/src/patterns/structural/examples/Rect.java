@@ -114,5 +114,4 @@ public class Rect
 	{
 		return "[" + getOrigin() + "; " + getExtent() + "]";
 	}
-
 }
