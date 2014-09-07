@@ -1,5 +1,11 @@
 package patterns.structural.examples;
 
+/**
+ * Point class
+ * 
+ * @author Tomek
+ *
+ */
 public class Point
 {
 	public static final Point ZERO = new Point();

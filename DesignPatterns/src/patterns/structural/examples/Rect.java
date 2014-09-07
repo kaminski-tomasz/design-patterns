@@ -1,50 +1,59 @@
 package patterns.structural.examples;
 
+/**
+ * Rectangle class
+ * 
+ * @author Tomek
+ *
+ */
 public class Rect
 {
 	public static final Rect ZERO = new Rect();
 
-	private Point origin;
+	private float x;
+	private float y;
 	private float width;
 	private float height;
 
 	public Rect()
 	{
-		origin = new Point( 0.0f, 0.0f );
-		width = 0.0f;
-		height = 0.0f;
+		this.x = 0.0f;
+		this.y = 0.0f;
+		this.width = 0.0f;
+		this.height = 0.0f;
 	}
 
 	public Rect( float x, float y, float w, float h )
 	{
-		this.origin = new Point( x, y );
+		this.x = x;
+		this.y = y;
 		this.width = w;
 		this.height = h;
 	}
 
 	public Rect( Point origin, Point extent )
 	{
-		this( origin.getX(), origin.getY(), extent.getX() - origin.getX(), extent.getY() - origin.getY() );
+		this( origin.getX(), origin.getY(), extent.getX(), extent.getY() );
 	}
 
 	public float getLeft()
 	{
-		return origin.getX();
+		return this.x;
 	}
 
 	public void setLeft( float x )
 	{
-		this.origin.setX( x );
+		this.x = x;
 	}
 
 	public float getBottom()
 	{
-		return origin.getY();
+		return this.y;
 	}
 
 	public void setBottom( float y )
 	{
-		this.origin.setY( y );
+		this.y = y;
 	}
 
 	public float getWidth()
@@ -69,33 +78,34 @@ public class Rect
 
 	public Point getOrigin()
 	{
-		return origin;
+		return new Point( x, y );
 	}
 
 	public void setOrigin( Point origin )
 	{
-		this.origin = origin;
+		setLeft( origin.getX() );
+		setBottom( origin.getY() );
 	}
 
 	public Point getExtent()
 	{
-		return new Point( origin.getX() + width, origin.getY() + height );
+		return new Point( width, height );
 	}
 
 	public void setExtent( Point extent )
 	{
-		this.width = extent.getX() - origin.getX();
-		this.height = extent.getY() - origin.getY();
+		setWidth( extent.getX() );
+		setHeight( extent.getY() );
 	}
 
 	public void moveTo( Point point )
 	{
-		setOrigin( new Point( point ) );
+		setOrigin( point );
 	}
 
 	public void moveBy( Point point )
 	{
-		getOrigin().addHere( point );
+		setOrigin( getOrigin().addHere( point ) );
 	}
 
 	public boolean isEmpty()
@@ -112,6 +122,6 @@ public class Rect
 	@Override
 	public String toString()
 	{
-		return "[" + getOrigin() + "; " + getExtent() + "]";
+		return "[ Origin=" + getOrigin() + "; Extent=" + getExtent() + "]";
 	}
 }

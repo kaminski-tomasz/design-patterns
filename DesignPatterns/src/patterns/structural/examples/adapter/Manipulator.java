@@ -1,8 +1,6 @@
 package patterns.structural.examples.adapter;
 
-public class Manipulator
+public interface Manipulator
 {
-	public void manipulate()
-	{
-	}
+	public void manipulate();
 }
