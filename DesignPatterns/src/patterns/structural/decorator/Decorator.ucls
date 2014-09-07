@@ -4,7 +4,7 @@
   <class id="1" language="java" name="patterns.structural.decorator.ConcreteDecoratorB" project="DesignPatterns" 
     file="/DesignPatterns/src/patterns/structural/decorator/ConcreteDecoratorB.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="256" y="407"/>    
+    <position height="-1" width="-1" x="532" y="407"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -23,7 +23,7 @@
   <class id="3" language="java" name="patterns.structural.decorator.ConcreteDecoratorA" project="DesignPatterns" 
     file="/DesignPatterns/src/patterns/structural/decorator/ConcreteDecoratorA.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="532" y="418"/>    
+    <position height="-1" width="-1" x="263" y="415"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
