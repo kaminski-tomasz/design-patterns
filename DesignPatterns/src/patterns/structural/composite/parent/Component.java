@@ -1,13 +1,13 @@
-package patterns.composite.parent;
+package patterns.structural.composite.parent;
 
 /**
- * Interface for the component.
+ * Interface for components with parent node references
  * 
  * @author tkaminski
  * 
  */
-public interface IComponent {
-
+public interface Component
+{
 	/**
 	 * Do some important operation
 	 */
@@ -18,35 +18,34 @@ public interface IComponent {
 	 * 
 	 * @return Parent of the component
 	 */
-	public IComponent getParent();
+	public Component getParent();
 
 	/**
 	 * Add the component to the list. Default implementation returns false.
 	 * 
 	 * @param component
-	 *            component that is added.
+	 *                component that is added.
 	 * @return true if component was added successfully.
 	 */
-	public boolean add(IComponent component);
+	public boolean add( Component component );
 
 	/**
 	 * Removes the component from the children list. Default implementation
 	 * returns false.
 	 * 
 	 * @param component
-	 *            component that is removed.
+	 *                component that is removed.
 	 * @return true if component was removed successfully.
 	 */
-	public boolean remove(IComponent component);
+	public boolean remove( Component component );
 
 	/**
-	 * Get the i-th children of the component. Default implementation returns
+	 * Get the i-th child of the component. Default implementation returns
 	 * null.
 	 * 
 	 * @param i
-	 *            the index of the component in the list.
+	 *                the index of the component in the list.
 	 * @return component or null if not exists.
 	 */
-	public IComponent getChildren(int i);
-
+	public Component getChild( int i );
 }
