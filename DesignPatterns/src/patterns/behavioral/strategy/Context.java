@@ -1,4 +1,4 @@
-package patterns.strategy;
+package patterns.behavioral.strategy;
 
 /**
  * Context class which runs the strategy
