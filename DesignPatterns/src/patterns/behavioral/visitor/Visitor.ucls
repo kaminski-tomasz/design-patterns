@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.6" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true">  
+  <interface id="1" language="java" name="patterns.behavioral.visitor.Visitor" project="DesignPatterns" 
+    file="/DesignPatterns/src/patterns/behavioral/visitor/Visitor.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="531" y="84"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="2" language="java" name="patterns.behavioral.visitor.ConcreteElementB" project="DesignPatterns" 
+    file="/DesignPatterns/src/patterns/behavioral/visitor/ConcreteElementB.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="655" y="563"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="patterns.behavioral.visitor.ConcreteElementA" project="DesignPatterns" 
+    file="/DesignPatterns/src/patterns/behavioral/visitor/ConcreteElementA.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="412" y="563"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="patterns.behavioral.visitor.Client" project="DesignPatterns" 
+    file="/DesignPatterns/src/patterns/behavioral/visitor/Client.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="98" y="84"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="patterns.behavioral.visitor.ConcreteVisitor1" project="DesignPatterns" 
+    file="/DesignPatterns/src/patterns/behavioral/visitor/ConcreteVisitor1.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="348" y="254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="patterns.behavioral.visitor.ConcreteVisitor2" project="DesignPatterns" 
+    file="/DesignPatterns/src/patterns/behavioral/visitor/ConcreteVisitor2.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="713" y="254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="7" language="java" name="patterns.behavioral.visitor.Element" project="DesignPatterns" 
+    file="/DesignPatterns/src/patterns/behavioral/visitor/Element.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="531" y="409"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <dependency id="8">    
+    <bendpoint x="98" y="410"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <realization id="9">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <realization id="10">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <realization id="11">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <dependency id="12">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <realization id="13">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
