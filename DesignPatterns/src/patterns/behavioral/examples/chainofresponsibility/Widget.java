@@ -2,6 +2,7 @@ package patterns.behavioral.examples.chainofresponsibility;
 
 public class Widget extends HelpHandler
 {
+	@SuppressWarnings( "unused" )
 	private Widget parent;
 
 	protected Widget( Widget parent )

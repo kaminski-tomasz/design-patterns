@@ -1,8 +1,8 @@
 package patterns.structural.examples.flyweight;
 
-
 public class GlyphContext
 {
+	@SuppressWarnings( "unused" )
 	private int index;
 
 	public void next( int step )
