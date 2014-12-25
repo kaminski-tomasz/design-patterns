@@ -6,12 +6,12 @@ package patterns.behavioral.strategy;
  * @author Tomek
  *
  */
-public class ConcreteStrategyB implements Strategy
+public class ConcreteStrategyC implements Strategy
 {
 	@Override
 	public void algorithmInterface( String input )
 	{
-		System.out.println( "ConcreteStrategyB.algorithmInterface("
+		System.out.println( "ConcreteStrategyC.algorithmInterface("
 				+ input + ")" );
 	}
 }

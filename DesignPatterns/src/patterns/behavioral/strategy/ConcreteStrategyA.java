@@ -1,10 +1,17 @@
 package patterns.behavioral.strategy;
 
-public class ConcreteStrategyA implements Strategy {
-
+/**
+ * Concrete Strategy
+ * 
+ * @author Tomek
+ *
+ */
+public class ConcreteStrategyA implements Strategy
+{
 	@Override
-	public Double operation(Double dataA, Double dataB) {
-		return dataA + dataB;
+	public void algorithmInterface( String input )
+	{
+		System.out.println( "ConcreteStrategyA.algorithmInterface("
+				+ input + ")" );
 	}
-
 }

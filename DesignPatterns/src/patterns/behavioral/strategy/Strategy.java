@@ -2,17 +2,16 @@ package patterns.behavioral.strategy;
 
 /**
  * Interface for the strategy
- * @author tkaminski
+ * 
+ * @author Tomek
  *
  */
-public interface Strategy {
-
+public interface Strategy
+{
 	/**
-	 * Perform very important operation.
-	 * @param dataA
-	 * @param dataB
-	 * @return
+	 * Algorithm performed by the Strategy
+	 * 
+	 * @param input
 	 */
-	public Double operation(Double dataA, Double dataB);
-	
+	public void algorithmInterface( String input );
 }
